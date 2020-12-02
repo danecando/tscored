@@ -1,0 +1,56 @@
+{
+  "name": "tscored",
+  "version": "0.1.0",
+  "description": "TypeScript utilities library",
+  "main": "src/index.js",
+  "scripts": {
+    "watch": "jest --watchAll",
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danecando/tscored.git"
+  },
+  "author": "Dane Grant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danecando/tscored/issues"
+  },
+  "homepage": "https://github.com/danecando/tscored#readme",
+  "files": [
+    "dist/"
+  ],
+  "devDependencies": {
+    "@types/jest": "^26.0.16",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.(spec|test)\\.ts$",
+    "testPathIgnorePatterns": [
+      "examples/"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": {
+          "pathRegex": "\\.(spec|test)\\.ts$",
+          "ignoreCodes": [
+            151001
+          ]
+        }
+      }
+    }
+  }
+}
