@@ -1,16 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "lib": ["es2015", "dom"],
-    "declaration": true,
-    "outDir": "./dist",
+    "target": "ES2015",
+    "module": "commonjs",
     "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "files": ["src/index.ts"]
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Recommended"
 }
